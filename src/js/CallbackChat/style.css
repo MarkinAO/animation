@@ -1,0 +1,92 @@
+/* Callback Chat */
+.callback-wrap {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+}
+
+.callback-button {  
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 black;
+
+    transition: all 0.1s;
+    transform: scale(1);
+}
+
+.callback-button:hover {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;  
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    transition: all 0.1s;
+    transform: scale(0);
+}
+
+.active {
+    transform: scale(1);
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+}
+
+.hidden:hover {
+    width: 0;
+    height: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.cross {
+    box-sizing: border-box;
+    display: block;
+    padding-top: 1px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.cross:hover {
+    cursor: pointer;
+}
+
+.input {
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

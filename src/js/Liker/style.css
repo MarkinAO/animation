@@ -1,0 +1,98 @@
+/* Liker */
+.liker-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 120px;
+}
+  
+.liker {
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+  
+.liker:hover {
+    cursor: pointer;
+}
+  
+.like {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("./images/heart.png");
+    background-position: center;
+    background-size: contain;
+    
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+  
+@keyframes track1 {
+    0% {
+        opacity: 1;
+        left: 50%;
+        bottom: 0;
+    }
+    25% { left: 0; }
+    50% { left: 50%; }
+    75% { left: 100%; }
+    100% { 
+        left: 50%;
+        bottom: 200px;
+        opacity: 0;
+    }
+}
+  
+@keyframes track2 {
+    0% {
+        opacity: 1;
+        left: 50%;
+        bottom: 0;
+    }
+    25% { left: 50%; }
+    50% { left: 100%; }
+    75% { left: 0; }
+    100% {
+        left: 50%;
+        bottom: 200px;
+        opacity: 0;
+    }
+}
+  
+@keyframes track3 {
+    0% {
+        opacity: 1;
+        left: 50%;
+        bottom: 0;
+    }
+    25% { left: 50%; }
+    50% { left: 0; }
+    75% { left: 100%; }
+    100% {
+        left: 50%;
+        bottom: 200px;
+        opacity: 0;
+    }
+}
+  
+@keyframes track4 {
+    0% {
+        opacity: 1;
+        left: 50%;
+        bottom: 0;
+    }
+    25% { left: 100%; }
+    50% { left: 50%; }
+    75% { left: 0; }
+    100% {
+        left: 50%;
+        bottom: 200px;
+        opacity: 0;
+    }
+}
